@@ -503,7 +503,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
 
                         {msg.files &&
                           msg.files.length > 0 &&
-                          msg.files.map((file, fileIndex) => (
+                          msg.files.map((file: any, fileIndex: any) => (
                             <div
                               className="flex flex-col justify-start items-start self-stretch gap-2.5 h-16"
                               key={fileIndex}
@@ -558,7 +558,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
             {/* Preview Section */}
             {previews.length > 0 && (
               <div className="flex gap-4 p-[14px] border-b border-gray-300 max-w-[630px] overflow-x-auto">
-                {previews.map((file, index) => (
+                {previews.map((file: any, index: any) => (
                   <div
                     key={index}
                     className="relative border p-2 rounded-lg bg-gray-100 w-40"
@@ -566,8 +566,8 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
                     {file.type === "image" ? (
                       <>
                         <Image
-                          src={file.url}
-                          alt={file.name}
+                          src={file.url as string}
+                          alt={file.name as string}
                           width={96}
                           height={48}
                           className="w-24 h-12 object-cover rounded"
