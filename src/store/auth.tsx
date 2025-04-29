@@ -7,7 +7,7 @@ interface ChatSelectUser {
   avatar: string;
   id: string;
   timezone: string;
-  // news: number;
+  email: string;
   role: string;
   // phone: string;
 }
