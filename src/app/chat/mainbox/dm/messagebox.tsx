@@ -616,7 +616,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
               placeholder="Send your message..."
               inputRef={inputRef}
               value={message}
-              onChange={(e) => { handleTyping(event); setMessage(e.target.value); }}
+              onChange={(e: any) => { handleTyping(e); setMessage(e.target.value); }}
               onKeyDown={handleKeyDown}
               color="success"
               sx={{
