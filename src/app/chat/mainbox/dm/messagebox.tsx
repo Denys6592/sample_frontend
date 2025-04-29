@@ -302,7 +302,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
 
     if (!ext) return <FaFile className="text-gray-500 text-4xl" />; // Unknown file
 
-    const icons: { [key: string]: JSX.Element } = {
+    const icons: { [key: string]: any } = {
       pdf: <FaFilePdf className="text-red-500 text-4xl" />,
       doc: <FaFileWord className="text-blue-500 text-4xl" />,
       docx: <FaFileWord className="text-blue-500 text-4xl" />,
