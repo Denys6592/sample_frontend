@@ -6,12 +6,12 @@ import { useAtom } from "jotai";
 import { DmlistUpdate, userAtom } from "@/store/auth";
 import { requestAccept, requestCancel } from "@/utils/axios";
 import { socket } from "@/utils/socketClient";
-import { ObjectId } from "mongodb";
+// import { ObjectId } from "mongodb";
 
 interface FriendItemProps {
   avatar: string;
   name: string;
-  id: ObjectId; // Add id to identify the friend
+  id: string; // Add id to identify the friend
   permission: boolean; // Optional: if you want to handle permissions
   status: string;
   reply: boolean;
@@ -50,7 +50,7 @@ const FriendItem: React.FC<FriendItemProps> = ({
     };
   }, [drop]);
 
-  const setAccept = async (requestId: ObjectId) => {
+  const setAccept = async (requestId: string) => {
 
     try {
       if (user) {
@@ -68,7 +68,7 @@ const FriendItem: React.FC<FriendItemProps> = ({
     }
   };
 
-  const setCancel = async (requestId: ObjectId) => {
+  const setCancel = async (requestId: string) => {
 
     try {
       if (user) {
