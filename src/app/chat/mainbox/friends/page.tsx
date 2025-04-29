@@ -419,7 +419,7 @@ const ChatFriend = () => {
                       return (
                         <FriendItem
                           key={index}
-                          id={item._id}
+                          id={item._id as string}
                           status={item.status}
                           permission={false}
                           avatar={item.recipient.avatar}
@@ -432,7 +432,7 @@ const ChatFriend = () => {
                       return (
                         <FriendItem
                           key={index}
-                          id={item._id} 
+                          id={item._id as string} 
                           status={item.status}
                           permission={true}
                           avatar={item.requester.avatar}
@@ -463,7 +463,7 @@ const ChatFriend = () => {
                         return (
                           <FriendItem
                             key={index}
-                            id={item._id} // Ensure you have the unique ID for each friend
+                            id={item._id as string} // Ensure you have the unique ID for each friend
                             status={item.status}
                             permission={false}
                             avatar={item.recipient.avatar}
@@ -481,7 +481,7 @@ const ChatFriend = () => {
                         return (
                           <FriendItem
                             key={index}
-                            id={item._id} // Ensure you have the unique ID for each friend
+                            id={item._id as string} // Ensure you have the unique ID for each friend
                             status={item.status}
                             permission={true}
                             avatar={item.requester.avatar}
