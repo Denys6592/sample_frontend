@@ -416,7 +416,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
                   width={48}
                   height={48}
                   alt="user"
-                  src={user?.photoURL}
+                  src={user?.photoURL as string}
                 />
                 <div className="inline-flex flex-col justify-start items-start gap-1 basis-0 grow shrink">
                   <div className="inline-flex justify-start items-center self-stretch gap-2">
