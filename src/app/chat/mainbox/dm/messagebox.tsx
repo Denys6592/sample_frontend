@@ -138,7 +138,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
     }
   };
 
-  const newMessageInit = async (sender, receiver) => {
+  const newMessageInit = async (sender: any, receiver: any) => {
     await newMsgInit(sender, receiver);
   }
 
