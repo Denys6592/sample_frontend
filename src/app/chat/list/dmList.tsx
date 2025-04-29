@@ -74,7 +74,7 @@ const DMList = () => {
               height={48}
               alt="avatar"
               className="rounded-3xl"
-              src={user?.photoURL}
+              src={user?.photoURL as string}
             />
             {state === "Online" && (
               <div className="absolute bg-emerald-500 mt-10 ml-10 border border-white rounded-full w-2 h-2" />
