@@ -11,14 +11,14 @@ const userItem = () => {
   const [block, setBlock] = useState(false);
 
 
-  const handleRightClick = (event: MouseEvent) => {
+  const handleRightClick = (event: any) => {
     event.preventDefault(); // Prevent the default context menu
     // setMessage("Right-click detected!");
     setDrop(!drop);
   };
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event: any) => {
       if (
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target as Node) &&
