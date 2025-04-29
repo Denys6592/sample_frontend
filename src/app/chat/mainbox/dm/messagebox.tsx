@@ -211,7 +211,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
     
   };
 
-  const handleKeyDown = async (event) => {
+  const handleKeyDown = async (event: any) => {
     if (event.key === "Enter" && event.shiftKey === false && user) {
       event.preventDefault();
       await handleUpload();
