@@ -441,7 +441,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ sidebar, setSidebar }) => {
 
                       {msg.files &&
                         msg.files.length > 0 &&
-                        msg.files.map((file, fileIndex) => (
+                        msg.files.map((file: any, fileIndex: any) => (
                           <div
                             className="flex flex-col justify-start items-start self-stretch gap-2.5 h-16"
                             key={fileIndex}
