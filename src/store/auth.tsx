@@ -8,7 +8,7 @@ interface ChatSelectUser {
   id: string;
   timezone: string;
   // news: number;
-  // role: string;
+  role: string;
   // phone: string;
 }
 
@@ -27,7 +27,7 @@ export const chatServerAtom = atomWithStorage<ChatServer>("chatserver", {
   type: "dm",
   id: "0",
   name: "",
-  imageUrl: ""
+  imageUrl: "",
 });
 
 export const chatSelectUserAtom = atomWithStorage<ChatSelectUser>(
