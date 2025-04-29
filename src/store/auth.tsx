@@ -9,7 +9,7 @@ interface ChatSelectUser {
   timezone: string;
   email: string;
   role: string;
-  // phone: string;
+  phone: string;
 }
 
 interface ChatServer {
