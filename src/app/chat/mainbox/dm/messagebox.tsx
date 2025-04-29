@@ -1,3 +1,4 @@
+"use client";
 import { useAtom } from "jotai";
 import { TextField } from "@mui/material";
 import { Icons } from "@/icons";
