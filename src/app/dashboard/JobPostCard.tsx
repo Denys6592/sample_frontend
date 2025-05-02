@@ -8,7 +8,7 @@ type JobPostCardProps = {
     project: ProjectType;
 }
 
-const JobPostCard: React.FC<JobPostCardProps> = ({ project }) => {
+const JobPostCard: React.FC<JobPostCardProps> = ({ project: any }) => {
     const router = useRouter();
 
     const handleOpenJobPost = () => {
